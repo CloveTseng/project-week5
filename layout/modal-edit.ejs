@@ -1,0 +1,96 @@
+<div class="modal fade" id="modal-edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0 justify-content-between">
+          <h4 class="modal-title fw-bold gray-900" id="exampleModalLabel">Edit Admin</h4>
+          <a class="material-symbols-outlined align-middle d-block gray-900"  data-bs-dismiss="modal" aria-label="Close">close</a>
+        </div>
+
+        <div class="modal-body">
+          <form action="#">
+            <h5 class="fw-bold gray-900">Account</h5>
+            <div class="border-bottom border-gray-400 py-3">
+              <div class="mb-3">
+                <label for="name" class="gray-900 fs-087 d-block">Name</label>
+                <input type="text" id="name" name="name" class="d-block p-3 border-0 bg-light rounded-1 w-100" value="Emir Wicks" readonly>
+              </div>
+              <div class="mb-3">
+                <label for="mail" class="gray-900 fs-087 d-block">Email</label>
+                <input type="mail" id="mail" name="mail" class="d-block p-3 border-0 bg-light rounded-1 w-100" value="emir.wicks@mail.com" readonly>
+              </div>
+            </div>
+            <div class="border-bottom border-gray-400 py-4">
+              <h5 class="fw-bold gray-900">Verification</h5>
+              <div class="d-flex my-3 justify-content-between">
+                <div class="d-flex">
+                  <!-- <span class="material-symbols-outlined text-danger">warning</span> -->
+                  <span class="material-symbols-outlined text-success">check_circle</span>
+                  <p class="fw-bold gray-900 ms-1">Verified</p>
+                </div>
+                <time datetime="2020/4/12" class="time">2020/4/12</time>
+              </div>
+              <button type="button" class="btn btn-outline-success fw-bold w-100 py-3 border-secondary-subtle text-secondary" disabled>Send Verification Mail</button>
+            </div>
+            <div class="border-bottom border-gray-400 py-4">
+              <h5 class="fw-bold gray-900 mb-3">Access Level</h5>
+              <select class="form-select text-secondary" aria-label="Default select example">
+                <option value="" disabled>-Choose access level-</option>
+                <option value="1" selected>Admin</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="border-bottom border-gray-400 py-4">
+              <h5 class="fw-bold gray-900 py-2">Custom Access</h5>
+              <div class="check-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Lecture
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Coupon
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Message
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Setting
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Task Menu
+                  </label>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="py-4">
+            <h5 class="fw-bold gray-900">Deactivate Account</h5>
+            <div class="d-flex my-3">
+                <span class="material-symbols-outlined text-danger">warning</span>
+                <!-- <span class="material-symbols-outlined text-success">check_circle</span> -->
+                <p class="fw-bold gray-900 ms-1 text-danger">This cannot be undone!</p>
+            </div>
+            <button type="button" class="btn btn-outline-danger fw-bold w-100 py-3">Deactivate This Account</button>
+          </div>
+        </div>
+
+        <div class="modal-footer border-top-0">
+          <button type="button" class="btn btn-outline-success py-2 p-4-5" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success py-2 p-4-5">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/images/dolce-icon.png" />
+    <title>Dolce's Week5-ANSWER</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+  </head>
+  <body>
+    <div class="d-flex">
+      <%- include('./layout/aside', {page: "admin"}); -%>
+      <main class="container ms-4">
+        <!-- header -->
+        <%- include('./layout/header'); -%>
+        <!-- table -->
+        <%- include('./layout/table'); -%>
+        <!-- pagination -->
+        <%- include('./layout/pagination'); -%>
+      </main>
+    </div>
+
+    <!-- modal-view -->
+    <%- include('./layout/modal-view'); -%>
+
+    <!-- Modal-add -->
+    <%- include('./layout/modal-add'); -%>
+
+    <!-- Modal-edit -->
+    <%- include('./layout/modal-edit'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
